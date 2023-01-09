@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Memo {
+  String id;
   String title;
   String detail;
   Timestamp createdDate;
@@ -9,6 +10,7 @@ class Memo {
 
   Memo({
     //required必須項目
+    required this.id,
     required this.title,
     required this.detail,
     required this.createdDate,
